@@ -1,7 +1,7 @@
 :root {
   --bg: #f5f0e8;
-  --ink: #1a1208;
-  --accent: #d4522a;
+  --ink: #362209;
+  --accent: rgb(207, 176, 0);
   --accent2: #2d6a4f;
   --muted: #8a7968;
   --tag-bg: #e8e0d0;
@@ -18,7 +18,7 @@
 .ticker-wrap {
   width: 100%;
   background: var(--accent);
-  color: #fff;
+  color: var(--ink);
   overflow: hidden; /*so that pg horizontally scroll na karna pade*/
   position: sticky; /* so that it stays on top even after scrollinng vertically*/
   padding: 8px 0;
@@ -27,7 +27,7 @@
 }
 
 .ticker {
-  animation: ticker-animation 28s linear infinite;
+  animation: ticker-animation 40s linear infinite;
   display: flex;
   gap: 4rem;
   letter-spacing: 0.2rem;
@@ -36,6 +36,121 @@
   width: max-content;
 }
 
+.ticker-wrap:hover .ticker {
+  animation-play-state: paused;
+}
+
 .ticker-text {
   flex-shrink: 0;
+}
+
+.hero {
+  padding: 4rem;
+}
+
+.eyebrow-text {
+  text-transform: uppercase;
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  color: var(--accent);
+  letter-spacing: 0.1rem;
+  font-family: "DB mono", monospace;
+  font-weight: bold;
+}
+
+.hero-left {
+  margin-left: 3rem;
+}
+
+.hero-left h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  color: var(--ink);
+  margin-bottom: -2px;
+  margin-top: 0.5rem;
+}
+
+.hero-left em {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.description {
+  font-family: "DB mono", monospace;
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 400px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.image-placeholder1 img {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  right: 34rem;
+  top: -20rem;
+  border-color: var(--accent);
+  border-width: 4px;
+  border-style: solid;
+  z-index: 1;
+}
+
+.image-placeholder2 img {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  right: 26rem;
+  top: -17rem;
+  border-color: var(--accent);
+  border-width: 4px;
+  border-style: solid;
+  z-index: 2;
+}
+
+.image-placeholder3 img {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  right: 18rem;
+  top: -20rem;
+  border-color: var(--accent);
+  border-width: 4px;
+  border-style: solid;
+  z-index: 3;
+}
+.image-placeholder4 img {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  right: 10rem;
+  top: -17rem;
+  border-color: var(--accent);
+  border-width: 4px;
+  border-style: solid;
+  z-index: 4;
+}
+
+.image-placeholder5 img {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  right: 2rem;
+  top: -20rem;
+  border-color: var(--accent);
+  border-width: 4px;
+  border-style: solid;
+  z-index: 5;
 }
