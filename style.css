@@ -1,5 +1,5 @@
 :root {
-  --bg: #f5f0e8;
+  --bg: #fff7ea;
   --ink: #362209;
   --accent: rgb(207, 176, 0);
   --accent2: #2d6a4f;
@@ -7,6 +7,7 @@
   --tag-bg: #e8e0d0;
   --card: #fff9f2;
   --border: #d6cfc2;
+  background-color: var(--bg);
 }
 
 @keyframes ticker-animation {
@@ -197,4 +198,10 @@
 .button:hover {
   background-color: var(--ink);
   color: var(--bg);
+}
+
+.rounded {
+  border-radius: 40px;
+  border-width: 3px;
+  border-color: var(--accent);
 }
