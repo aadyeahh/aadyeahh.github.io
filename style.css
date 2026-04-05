@@ -70,6 +70,26 @@
   margin-top: 0.5rem;
 }
 
+.hero-left .correction1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: var(--accent2);
+  rotate: -25deg;
+  position: absolute;
+  left: 5.5rem;
+  top: 14.5rem;
+}
+
+.hero-left .correction2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: var(--accent2);
+  rotate: -25deg;
+  position: absolute;
+  left: 7rem;
+  top: 16.5rem;
+}
+
 .hero-left em {
   font-family: "Playfair Display", serif;
   font-size: 5rem;
@@ -111,7 +131,7 @@
   height: 200px;
   right: 26rem;
   top: -17rem;
-  border-color: var(--accent);
+  border-color: var(--accent2);
   border-width: 4px;
   border-style: solid;
   z-index: 2;
@@ -136,7 +156,7 @@
   height: 200px;
   right: 10rem;
   top: -17rem;
-  border-color: var(--accent);
+  border-color: var(--accent2);
   border-width: 4px;
   border-style: solid;
   z-index: 4;
@@ -153,4 +173,28 @@
   border-width: 4px;
   border-style: solid;
   z-index: 5;
+}
+
+.buttons-section {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  gap: 2rem;
+  display: flex;
+}
+
+.button {
+  background-color: var(--accent);
+  color: var(--ink);
+  padding: 0.6rem 0.6rem;
+  border-radius: 40px;
+  font-family: "DB mono", monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--accent2);
+  color: var(--bg);
 }
