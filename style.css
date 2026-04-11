@@ -214,7 +214,27 @@ body {
   color: var(--ink);
   text-align: justify;
   display: grid;
-  grid-template-rows: 1fr;
+  gap: 0.9rem;
+  grid-template-rows: 0.7fr;
+}
+
+.currently-item {
+  background-color: var(--tag-bg);
+  border-radius: 50rem;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.currently-item:hover {
+  /* background-color: var(--accent); */
+  /* color: var(--bg); */
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 4px 6px 0 var(--border);
+}
+
+.footer-text {
+  text-align: center;
 }
 
 /* Responsive Design */
